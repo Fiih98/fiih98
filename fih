@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Fiamma - Design Gráfico</title>
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">Sobre Mim</a></li>
+                <li><a href="#portfolio">Portfólio</a></li>
+                <li><a href="#services">Serviços</a></li>
+                <li><a href="#contact">Contato</a></li>
+                <li><a href="#product">Produto</a></li>
+            </ul>
+        </nav>
+        <div class="header-content">
+            <h1>Fiamma - Design Gráfico</h1>
+            <p>Criando experiências visuais incríveis</p>
+        </div>
+    </header>
+
+    <!-- Seção Sobre Mim -->
+    <section id="about">
+        <h2>Sobre Mim</h2>
+        <p>Meu nome é Fiamma, sou designer gráfica com experiência em criação de identidades visuais, ilustrações e design para web. Estudo <strong>Design Gráfico</strong> e estou sempre atualizando minhas habilidades para entregar o melhor para meus clientes. Meu telefone é <strong>(11) 99296-0000</strong>.</p>
+    </section>
+
+    <!-- Seção Portfólio -->
+    <section id="portfolio">
+        <h2>Portfólio</h2>
+        <div class="portfolio-grid">
+            <div class="portfolio-item">
+                <img src="images/portfolio1.jpg" alt="Trabalho 1">
+                <p>Design de Identidade Visual</p>
+            </div>
+            <div class="portfolio-item">
+                <img src="images/portfolio2.jpg" alt="Trabalho 2">
+                <p>Ilustração Personalizada</p>
+            </div>
+            <div class="portfolio-item">
+                <img src="images/portfolio3.jpg" alt="Trabalho 3">
+                <p>Design para Web</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Serviços -->
+    <section id="services">
+        <h2>Serviços</h2>
+        <ul>
+            <li>Design de Identidade Visual</li>
+            <li>Ilustrações Digitais</li>
+            <li>Design para Redes Sociais</li>
+            <li>Desenvolvimento de Layouts para Web</li>
+        </ul>
+    </section>
+
+    <!-- Seção Contato -->
+    <section id="contact">
+        <h2>Contato</h2>
+        <form action="enviar_formulario.php" method="post">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Mensagem:</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <!-- Seção Produto -->
+    <section id="product">
+        <h2>Produto para Venda</h2>
+        <img src="images/produto.jpg" alt="Produto" class="product-image">
+        <p><strong>Nome do Produto:</strong> Pôster de Arte Digital Personalizado</p>
+        <p><strong>Descrição:</strong> Pôster exclusivo criado em design gráfico, com alta qualidade de impressão. Ideal para decorar ambientes e presentear pessoas queridas.</p>
+        <p><strong>Preço:</strong> R$ 150,00</p>
+        <p><strong>Contato para Compra:</strong> Entre em contato pelo telefone <strong>(11) 99296-0000</strong> ou envie um e-mail para <strong>fiamma@exemplo.com</strong>.</p>
+        <button class="buy-button">Comprar Agora</button>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2024 - Fiamma | Design Gráfico</p>
+        <p>Telefone: (11) 99296-0000 | Email: fiamma@exemplo.com</p>
+    </footer>
+
+</body>
+</html>
+/* Estilos gerais */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f8f8;
+    margin: 0;
+    padding: 0;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #333;
+    color: white;
+    padding: 50px 0;
+    text-align: center;
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.header-content h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.header-content p {
+    font-size: 24px;
+}
+
+/* Seções */
+section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#portfolio .portfolio-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#portfolio .portfolio-item {
+    margin: 15px;
+}
+
+#portfolio .portfolio-item img {
+    width: 300px;
+    height: auto;
+    border: 1px solid #ccc;
+}
+
+#services ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#services ul li {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+/* Formulário de Contato */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+}
+
+form button {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #218838;
+}
+
+/* Seção Produto */
+.product-image {
+    width: 100%;
+    max-width: 400px;
+    margin: 20px 0;
+}
+
+.buy-button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.buy-button:hover {
+    background-color: #0056b3;
+}
+
+/* Rodapé */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+}
